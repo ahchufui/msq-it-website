@@ -8,7 +8,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         {/* Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-blue-600 to-indigo-800 opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-light via-primary to-primary-dark opacity-90"></div>
+        
+        {/* Network Background Image */}
+        <div className="absolute inset-0 opacity-20">
+          <img src="/network-4636686_1280.jpg" alt="Network Background" className="w-full h-full object-cover" />
+        </div>
         
         {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -94,8 +99,8 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gray-50"></div>
-        <div className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-blue-50 to-transparent"></div>
-        <div className="absolute left-0 bottom-0 h-1/3 w-full bg-gradient-to-t from-blue-50 to-transparent"></div>
+        <div className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-primary-light/5 to-transparent"></div>
+        <div className="absolute left-0 bottom-0 h-1/3 w-full bg-gradient-to-t from-primary-light/5 to-transparent"></div>
         
         {/* Decorative Elements */}
         <div className="absolute top-20 right-20 w-64 h-64 bg-blue-200 rounded-full opacity-20 blur-2xl hero-shape-3"></div>
@@ -111,7 +116,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-block px-3 py-1 rounded-full bg-blue-100 text-primary mb-4 hero-content-delay-1">
+            <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-primary mb-4 hero-content-delay-1">
               <p className="text-sm font-medium">Modern IT Solutions</p>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 hero-content-delay-1">Enabling Business Through Technology</h2>
@@ -178,16 +183,21 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-white to-blue-50 opacity-80"></div>
         
         {/* Decorative Elements */}
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl"></div>
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-indigo-400 opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-primary-light opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary opacity-10 rounded-full blur-3xl"></div>
+        
+        {/* Network Background Image - Subtle */}
+        <div className="absolute inset-0 opacity-5">
+          <img src="/network-4636686_1280.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
         
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-block px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 mb-4 hero-content-delay-1">
+            <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-indigo-700 mb-4 hero-content-delay-1">
               <p className="text-sm font-medium">Tailored for Your Business</p>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-indigo-600 hero-content-delay-1">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-primary-dark hero-content-delay-1">
               Solutions for Your Requirements
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto hero-content-delay-2">
@@ -231,10 +241,10 @@ export default function Home() {
             
             {/* Managed IT Services Card */}
             <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-primary-dark rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
               <div className="relative bg-white p-8 sm:p-10 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center mr-4 shadow-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center mr-4 shadow-md">
                     <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                     </svg>
@@ -250,8 +260,8 @@ export default function Home() {
                     'Help Desk and User Support'
                   ].map((item, index) => (
                     <li key={index} className="flex items-start transition-all duration-300 hover:translate-x-1">
-                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3 mt-0.5">
-                        <svg className="h-4 w-4 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary-light/20 flex items-center justify-center mr-3 mt-0.5">
+                        <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
@@ -268,12 +278,17 @@ export default function Home() {
       {/* AI Chatbot Section */}
       <section className="py-24 relative overflow-hidden">
         {/* Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-900"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-light/20 via-primary/30 to-primary-dark/40"></div>
+        
+        {/* Network Background Image */}
+        <div className="absolute inset-0 opacity-10">
+          <img src="/network-4636686_1280.jpg" alt="Network Background" className="w-full h-full object-cover" />
+        </div>
         
         {/* Decorative Elements */}
         <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 opacity-10 rounded-full blur-3xl hero-shape-2"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-indigo-500 opacity-10 rounded-full blur-3xl hero-shape-1"></div>
+          <div className="absolute top-20 right-20 w-72 h-72 bg-primary-light opacity-20 rounded-full blur-3xl hero-shape-2"></div>
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-primary opacity-20 rounded-full blur-3xl hero-shape-1"></div>
           
           {/* Circuit pattern overlay */}
           <div className="absolute inset-0 opacity-5" style={{ 
@@ -286,13 +301,13 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="hero-content-delay-1">
-              <div className="inline-block px-3 py-1 rounded-full bg-indigo-900/50 backdrop-blur-sm text-indigo-200 mb-6">
+              <div className="inline-block px-3 py-1 rounded-full bg-primary-light/30 backdrop-blur-sm text-primary-dark mb-6">
                 <p className="text-sm font-medium">Powered by Azure OpenAI</p>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-indigo-100">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-primary-dark">
                 AI-Enhanced Support
               </h2>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-xl mb-8 text-gray-700">
                 We're implementing advanced AI chatbots for real-time, intelligent support to enhance your experience.
               </p>
               <ul className="space-y-5">
@@ -302,28 +317,28 @@ export default function Home() {
                   'Smart Routing to human technicians when needed'
                 ].map((item, index) => (
                   <li key={index} className="flex items-start hero-content-delay-2">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mr-4 shadow-glow">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-primary-light to-primary flex items-center justify-center mr-4 shadow-glow">
                       <svg className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
-                    <span className="text-blue-100">{item}</span>
+                    <span className="text-gray-700">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
             
             <div className="relative group hero-content-delay-2">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-              <div className="relative bg-gray-900/80 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 shadow-2xl">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-light to-primary rounded-xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+              <div className="relative bg-white/90 backdrop-blur-sm p-6 rounded-xl border border-primary-light/30 shadow-2xl">
                 <div className="flex justify-between items-center mb-6">
                   <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mr-3 shadow-md">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-light to-primary flex items-center justify-center mr-3 shadow-md">
                       <svg className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-white">MSQ IT Assistant</h3>
+                    <h3 className="text-lg font-semibold text-gray-800">MSQ IT Assistant</h3>
                   </div>
                   <div className="flex space-x-2">
                     <div className="w-3 h-3 rounded-full bg-green-400"></div>
@@ -335,20 +350,20 @@ export default function Home() {
                 <div className="space-y-4 mb-6">
                   {/* AI Message */}
                   <div className="flex items-start">
-                    <div className="bg-indigo-600 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-3 shadow-md">
+                    <div className="bg-primary-light rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-3 shadow-md">
                       AI
                     </div>
-                    <div className="bg-indigo-900/50 backdrop-blur-sm rounded-lg p-3 max-w-[80%] shadow-md">
-                      <p className="text-blue-100">Hello! I'm your MSQ IT virtual assistant. How can I help you today?</p>
+                    <div className="bg-primary-light/10 backdrop-blur-sm rounded-lg p-3 max-w-[80%] shadow-md">
+                      <p className="text-gray-700">Hello! I'm your MSQ IT virtual assistant. How can I help you today?</p>
                     </div>
                   </div>
                   
                   {/* User Message */}
                   <div className="flex items-start justify-end">
-                    <div className="bg-blue-600/30 backdrop-blur-sm rounded-lg p-3 max-w-[80%] shadow-md">
-                      <p className="text-blue-100">I need help with my network connectivity issues.</p>
+                    <div className="bg-primary/20 backdrop-blur-sm rounded-lg p-3 max-w-[80%] shadow-md">
+                      <p className="text-gray-700">I need help with my network connectivity issues.</p>
                     </div>
-                    <div className="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center ml-3 shadow-md">
+                    <div className="bg-primary rounded-full w-8 h-8 flex items-center justify-center ml-3 shadow-md">
                       <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>

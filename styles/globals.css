@@ -25,8 +25,9 @@
 }
 
 :root {
-  --primary: #0056b3;
-  --primary-dark: #004494;
+  --primary: #4299e1;
+  --primary-dark: #3182ce;
+  --primary-light: #63b3ed;
 }
 
 @layer base {

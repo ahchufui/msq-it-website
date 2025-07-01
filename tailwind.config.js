@@ -8,11 +8,11 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0056b3',
-          dark: '#004494',
-          light: '#3a7cc3',
+          DEFAULT: '#4299e1', // Lighter sky blue
+          dark: '#3182ce',   // Medium sky blue
+          light: '#63b3ed',  // Very light sky blue
         },
-        secondary: '#f8f9fa',
+        secondary: '#f0f9ff', // Lightest blue background
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],

@@ -4,7 +4,12 @@ export default function PageHeader({ title, subtitle, accentText }) {
   return (
     <section className="relative py-20 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-blue-600 to-indigo-800 opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-light via-primary to-primary-dark opacity-90"></div>
+      
+      {/* Network Background Image */}
+      <div className="absolute inset-0 opacity-20">
+        <img src="/network-4636686_1280.jpg" alt="Network Background" className="w-full h-full object-cover" />
+      </div>
       
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">

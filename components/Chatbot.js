@@ -122,7 +122,7 @@ export default function Chatbot() {
       {/* Chat button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 bg-primary text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition-all z-50"
+        className="fixed bottom-6 right-6 bg-primary-light text-white rounded-full p-4 shadow-lg hover:bg-primary transition-all z-50"
       >
         {isOpen ? (
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -139,9 +139,9 @@ export default function Chatbot() {
       {isOpen && (
         <div className="fixed bottom-20 right-6 w-80 sm:w-96 bg-white rounded-lg shadow-xl z-50 flex flex-col" style={{ height: '500px' }}>
           {/* Chat header */}
-          <div className="bg-primary text-white p-4 rounded-t-lg flex items-center justify-between">
+          <div className="bg-gradient-to-r from-primary-light to-primary text-white p-4 rounded-t-lg flex items-center justify-between">
             <div className="flex items-center">
-              <div className="bg-white rounded-full w-8 h-8 flex items-center justify-center text-primary font-bold mr-3">
+              <div className="bg-white rounded-full w-8 h-8 flex items-center justify-center text-primary-light font-bold mr-3">
                 AI
               </div>
               <h3 className="font-medium">MSQ IT Support</h3>
@@ -161,14 +161,14 @@ export default function Chatbot() {
                 className={`mb-4 flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 {message.sender === 'bot' && (
-                  <div className="bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2 flex-shrink-0">
+                  <div className="bg-primary-light rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2 flex-shrink-0">
                     AI
                   </div>
                 )}
                 <div
                   className={`px-4 py-2 rounded-lg max-w-[80%] ${
                     message.sender === 'user'
-                      ? 'bg-primary text-white'
+                      ? 'bg-primary-light text-white'
                       : 'bg-gray-100 text-gray-800'
                   }`}
                 >
@@ -192,11 +192,11 @@ export default function Chatbot() {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Type your message..."
-                className="w-full p-2 pr-12 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full p-2 pr-12 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-light"
               />
               <button
                 type="submit"
-                className="absolute right-1 top-1 bg-primary text-white p-1 rounded-full hover:bg-blue-700"
+                className="absolute right-1 top-1 bg-primary-light text-white p-1 rounded-full hover:bg-primary"
                 disabled={!inputValue.trim()}
               >
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
